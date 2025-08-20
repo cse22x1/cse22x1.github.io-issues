@@ -1,0 +1,57 @@
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Provide the URL of the page where you encountered the issue.
+      placeholder: ex. https://cse22x1.github.io/web/index.html
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What kind of device are you using?
+      options:
+        - desktop (Default)
+        - mobile
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browser(s) are you seeing the problem on?
+      multiple: true
+      options:
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Firefox
+        - Other
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What is the nature of the problem on this page?
+      placeholder: Tell us what you see and what is wrong.
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: Valid bug reports will be entered into a drawing for swag
+        at the end of the semester.  If you would like to be entered into that
+        drawing, enter your name.number email address
+      placeholder: ex. brutus.1@buckeyemail.osu.edu
+    validations:
+      required: false
