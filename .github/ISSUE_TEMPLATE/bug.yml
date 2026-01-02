@@ -11,7 +11,7 @@ body:
     attributes:
       label: URL
       description: Provide the URL of the page where you encountered the issue.
-      placeholder: ex. https://cse22x1.github.io/web/index.html
+      placeholder: ex. https://cse22x1.engineering.osu.edu/web/index.html
     validations:
       required: true
   - type: dropdown
@@ -44,13 +44,3 @@ body:
       placeholder: Tell us what you see and what is wrong.
     validations:
       required: true
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: Valid bug reports will be entered into a drawing for swag
-        at the end of the semester.  If you would like to be entered into that
-        drawing, enter your name.number email address
-      placeholder: ex. brutus.1@buckeyemail.osu.edu
-    validations:
-      required: false
